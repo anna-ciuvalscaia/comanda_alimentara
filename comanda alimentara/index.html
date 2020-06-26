@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <link rel="icon" href="images/icon_ico.ico">
+    <meta charset="UTF-8">
+   
+    <title>Comanda Alimentara</title>
+</head>
+<body>
+    <!--bara de menu-->
+    <table width="790" bgcolor="#53C643" align="center" cellpadding="10" ><!--bara menu-->
+        <tr>
+            <td><img width="100" src="images/logo.jpg" alt="logotip"></td>
+            <td><h2><a href="index.html">Comanda</a></h2></td>
+            <td><h2><a href="terms.html" target="_blank">Livrare</a></h2></td>
+            <td><h2><a href="contacte.html" target="_blank">Contacte</a></h2></td>
+        </tr>
+    </table> 
+        
+    <!--cererea de comanda--> 
+<form action="confirmation.html">
+    <table align="center" cellpadding="5" width="800" height="615">
+        <tr>
+            <td width="400" height="200" align="center">
+            
+                <h1>Salata "Cezar"</h1>
+                <hr>
+                file de pui, cașcaval „Parmigiano”, roșii „Cherry”, salată „Romano”, sos „Caesar”, crutoane
+                <hr>
+               <h2> &#9878; 270 gr.   &#128176; 75 MDL</h2>
+
+            </td>
+            <!--imaginea salat cezar-->
+            <td rowspan="7"><img width="400" height="680" src="images/salat_cesar.jpeg" alt="salata cesar"></td>
+        </tr>
+        <tr align="center" bgcolor="#E15023" height="10">
+            <td><h2>Cerere de comanda</h2></td>
+            <hr>
+        </tr>
+        <tr>
+            <td height="90" align="center">
+                <label>Numele:</label>
+                <input type="text" placeholder="ex. Ana" required pattern=".{3,}" title="Numele nu poate contine mai putin de 3 litere" >
+            <br><br>
+            <label>Nr. de contact: +373</label>
+            <input type="tel" placeholder="ex. 68978544" required pattern=".{8,}" title="8 cifre">
+            </td>
+            
+        </tr> 
+        <tr height="10" bgcolor="#E1964B">
+            <td></td> 
+        </tr>
+        <tr>
+            <td align="center" height="100">
+                <h4>Adresa livrarii:</h4>
+                <label>Localitatea:</label>
+                <select>
+                    <option>Chisinau</option>
+                    <option>Balti</option>
+                    <option>Orhei</option>
+                    <option>Cahul</option>
+                </select>
+                <br>
+                <br>
+               <label>strada/bloc:</label> 
+               <input type="text" required placeholder="ex. str. I. Vieru 28, ap. 15">
+            <br><br>
+            <label>Ora livrarii:</label>
+            <input type="time" required>
+            <br><br>
+            </td>
+            
+        </tr>
+        <tr height="10" bgcolor="#E1964B" >
+            <td></td>   
+        </tr>
+        <tr>
+            <td align="right">
+                <label>Sunt de acord cu <a href="terms.html" target="_blank">termenii si conditiile livrarii</a></label>
+                <input type="checkbox" required>
+                <br><br>
+                <button>Confirma comanda</button>
+            </td>
+            
+        </tr>
+        
+    </table>    
+</form>
+<br>
+<br>
+<!--bara de jos-->
+<hr>
+<p align="center">Salat Restaurant &reg; 2020 | contacte: <a href="contacte.html" target="_blank">+3736112233</a>
+</p>
+<hr>
+</body>
+</html>
